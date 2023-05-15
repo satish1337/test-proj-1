@@ -36,6 +36,14 @@ spec:
 
   # here's the steps that are executed in series in the scaffolder backend
   steps:
+    - id: fetch-base
+      name: Fetch Base
+      action: fetch:template
+      input:
+        url: ./
+        values:
+          name: ${{ parameters.name }}
+
     - id: publish
       name: Publish
       action: publish:github

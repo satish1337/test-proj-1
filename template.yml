@@ -40,6 +40,5 @@ spec:
       name: Publish
       action: publish:github
       input:
-        repoUrl: '{{ parameters.repoUrl }}'
-        repoVisibility: public # or 'internal' or 'private'
-
+        repoUrl: ${{ parameters.repoUrl }}
+    repoVisibility: public # or 'internal' or 'private'

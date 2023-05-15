@@ -1,7 +1,7 @@
 {
-  "name": "test-proj-1",
+  "name": "${{ values.name }}",
   "version": "0.0.1",
-  "description": "",
+  "description": "${{ values.name }}",
   "author": "",
   "private": true,
   "license": "UNLICENSED",

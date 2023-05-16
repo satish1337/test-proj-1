@@ -49,14 +49,14 @@ spec:
       action: publish:github
       input:
         repoUrl: ${{ parameters.repoUrl }}
-        repoVisibility: private # or 'internal' or 'private'
+        repoVisibility: public # or 'internal' or 'private'
 
     - id: permissions
       name: Permissions
       action: github:permissions
       input:
         repoUrl: ${{ parameters.repoUrl }}
-        repoVisibility: private # or 'internal' or 'private'
+        repoVisibility: public # or 'internal' or 'private'
 
     # - id: register
     #   name: Register

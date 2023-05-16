@@ -51,6 +51,12 @@ spec:
         repoUrl: ${{ parameters.repoUrl }}
         repoVisibility: public # or 'internal' or 'private'
 
+    - id: wait
+      name: Wait
+      action: debug:wait
+      input:
+        seconds: 30
+
     - id: permissions
       name: Permissions
       action: github:permissions
